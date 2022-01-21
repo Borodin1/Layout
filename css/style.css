@@ -12,27 +12,39 @@ body{
     background-color: #ffFfff;
 }
 
+.container{
+    max-width: 1170px;
+    margin: auto;
+    align-items: center;
+}
+
 .header{
     display: flex;
     justify-content: center;
 }
 
-.header-content{
+
+.header_content_container{
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
-.top{
-    margin-left: 250px;
+.header_content{
+    max-width: 1170px;
+    margin: auto;
 }
+
+
 
 .menu{
     list-style-type: none;
-    width: 800px;
+    max-width: 800px;
     font-family: 'Lato', sans-serif;
     padding-top: 10px;
+    font-size: 13.5px;
+    text-align: end;
 }
 
 .menu li{
@@ -45,13 +57,13 @@ body{
     border-radius: 5px;
     border-width: 2px;      
     text-align: center;
-
+    color: #ffFfff;
 }
 
 .menu a{
     text-decoration: none;
     text-align: center;
-    color: grey;
+    color: inherit;
     text-transform: uppercase;
     line-height: 40px;
 }
@@ -94,7 +106,6 @@ body{
 }
 
 .label{
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,21 +115,40 @@ body{
 }
 
 
-.button1{
-    color: #ffFfff;
-    background-color: #ffbb42;
-    border-radius: 5px;
-    padding: 10px 20px;    
+
+.in_type{
+    padding: 12px;
     text-align: center;
-    text-decoration: none;
 }
+
+.in_type:not(:first-child){
+    margin-left: 10px;
+
+}
+
+.in_type:nth-child(3){
+    margin-right: 5px;
+}
+
+
+.label_button{
+    background-color: #ffbb42;
+    border-radius: 8px;
+    padding: 13px 20px;
+    font-size: 17px;
+    color: #ffFfff;
+    border: none;
+}
+
+
+
 
 .laptop{
     text-align: center;
 }
 
 .lp{
-    margin-top: 21px;
+    padding-top: 21px;
 }
 
 
